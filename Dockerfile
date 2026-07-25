@@ -54,4 +54,5 @@ RUN chmod +x /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 # Default command (can be overridden)
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "movio.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "config.wsgi:application"]
+
